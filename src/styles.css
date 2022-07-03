@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('../public/nature.jpg');
+    background-blend-mode: lighten;
+}
+
+button.square {
+    height: 16px;
+    width: 16px;
+    margin: 1px;
+}
+
+.main-container {
+    margin: auto;
+    color: wheat;
+    text-align: center;
+    margin-top: 3em;
+}
+
+button.square {
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+}
+
+.board>p:first-child {
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 0.5em;
+    padding: 7px;
+    background-color: #7281cc;
+    color: yellow;
+    width: fit-content;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px currentColor;
+}
+
+.board>p:last-child {
+    font-weight: bold;
+    margin: auto;
+    margin-top: 0.5em;
+    padding: 7px;
+    background-color: #c9cc72;
+    color: yellow;
+    width: fit-content;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px currentColor;
+}
+
+.board {
+    margin: 1em;
+}
