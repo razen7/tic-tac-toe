@@ -28,6 +28,8 @@ function Board(props) {
                 setGameStatus(`Player X has won`)
             } else if (ticTacToeGameStatus(copyBoard) === `Player O has won`) {
                 setGameStatus(`Player O has won`)
+            } else if (ticTacToeGameStatus(copyBoard) === `Game is drawn`) {
+                setGameStatus(`Game is drawn`)
             }
         }
     }
@@ -58,6 +60,13 @@ function ticTacToeGameStatus(board) {
         return `Player X has won`
     else if (hasOWon(board))
         return `Player O has won`
+    else {
+        if (board.every(v => {
+            return v.every(ele => ele === 'X' || ele === 'O')
+        })) {
+            return `Game is drawn`
+        } 
+    }
 }
 
 function hasXWon(board) {
