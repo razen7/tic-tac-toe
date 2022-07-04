@@ -56,3 +56,11 @@ button.square {
 .board {
     margin: 1em;
 }
+
+.all-steps> button {
+    background-color: palegoldenrod;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 3px;
+}
