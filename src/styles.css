@@ -23,44 +23,78 @@ button.square {
     margin-top: 3em;
 }
 
-button.square {
-    height: 50px;
-    width: 50px;
-    margin: 2px;
+.main-container>h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
 }
 
-.board>p:first-child {
+.game-container {
+    margin: 1em;
+}
+
+.game-container>p:first-child {
     font-weight: bold;
     margin: auto;
     margin-bottom: 0.5em;
-    padding: 7px;
+    padding: 7px 14px;
     background-color: #7281cc;
     color: yellow;
     width: fit-content;
     border-radius: 4px;
-    box-shadow: 2px 2px 2px currentColor;
+    box-shadow: 0 0 5px;
+    font-size: 20px;
+    letter-spacing: .8px;
 }
 
-.board>p:last-child {
+.game-container>p:last-child {
     font-weight: bold;
     margin: auto;
     margin-top: 0.5em;
-    padding: 7px;
-    background-color: #c9cc72;
+    padding: 7px 14px;
+    background-color: #7281cc;
     color: yellow;
     width: fit-content;
     border-radius: 4px;
-    box-shadow: 2px 2px 2px currentColor;
+    box-shadow: 0 0 5px;
+    font-size: 20px;
+    letter-spacing: .8px;
+
 }
 
-.board {
-    margin: 1em;
-}
-
-.all-steps> button {
-    background-color: palegoldenrod;
-    border: none;
+button.square {
+    height: 100px;
+    width: 100px;
+    margin: 1px;
     border-radius: 5px;
-    padding: 2px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#hr-one{
+    height: 3px;
+    background-color: #F5DEB3;
+    margin-bottom: 5px;
+    box-shadow: 0 0 2px;
+}
+
+.history-container > h1{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.all-steps>button {
+    background-color: palegoldenrod;
+    color: darkblue;
+    font-weight: 700;
+    letter-spacing: .8px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 2px;
+    padding: 3px 8px;
     margin: 3px;
+    transition: .7s ease;
+}
+
+.all-steps>button:hover{
+    background-color: goldenrod;;
 }

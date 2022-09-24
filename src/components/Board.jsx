@@ -1,15 +1,17 @@
 function Board(props) {
     return (
-        <div className="board">
+        <div className="game-container">
             <p>
-                Next Player:
+                Next Player: &nbsp;
                 <span>{props.player}</span>
             </p>
 
-            {props.curBoard.map((row, idx) => {
-                return props.generateRow(idx);
-            })}
-            
+            <div className="board-container">
+                {props.curBoard.map((row, idx) => {
+                    return props.generateRow(idx);
+                })}
+            </div>
+
             <p>
                 {props.gameStatus}
             </p>

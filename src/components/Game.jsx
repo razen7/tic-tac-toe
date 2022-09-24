@@ -55,7 +55,8 @@ function Game(props) {
     return (
         <>
             <Board player={player} curBoard={curBoard} generateRow={generateRow} gameStatus={gameStatus} movesHistory={movesHistory} />
-            <div className="history">
+            <hr id="hr-one" />
+            <div className="history-container">
                 <h1>History</h1>
                 <div className="all-steps">
                     {
